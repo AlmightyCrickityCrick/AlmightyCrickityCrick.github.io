@@ -1,0 +1,173 @@
+.trailer-container {
+  margin-top: 10px;
+  height: 800px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  border-radius: 8%;
+  box-shadow: 7px 7px rgba(87, 87, 87, 0.507);
+}
+.trailer-text {
+  color: #a1c349;
+  text-emphasis: bold;
+  padding: 5px;
+  font-size: 3em;
+  font-family: "Livvic", sans-serif;
+}
+.individual-card {
+  font-family: "Livvic", sans-serif;
+  margin-top: 15px;
+  height: 800px;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8%;
+  box-shadow: 7px 7px rgba(87, 87, 87, 0.507);
+}
+.movie-text {
+  padding: 8px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.genre-space {
+  display: flex;
+  justify-content: center;
+}
+
+.genre-object {
+  color: grey;
+  display: inline;
+  text-align: center;
+}
+.genre-object::after {
+  content: "| ";
+  padding-left: 5px;
+}
+.genre-object:last-child::after {
+  content: " ";
+}
+.title {
+  margin-top: 10px;
+  padding: 5px;
+  font-family: "Livvic", sans-serif;
+  color: #a1c349;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.movie-description {
+  padding: 7px;
+  color: white;
+  font-size: 32px;
+  height: 800px;
+  font-family: "Livvic", sans-serif;
+}
+.button-holder {
+  display: flex;
+  justify-content: center;
+}
+.min,
+.max {
+  width: 80px;
+  height: 42px;
+  padding: 5px;
+  background-color: rgb(50, 50, 50);
+  border: 2px solid #a1c349;
+  color: #a1c349;
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  margin: 15px;
+  border-radius: 12%;
+}
+.min:hover,
+.max:hover {
+  background-color: rgb(90, 90, 90);
+}
+.popularity-place {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.popularity-title {
+  font-size: 28px;
+  color: rgb(161, 195, 73);
+  margin: 15px;
+}
+.popularity-content {
+  display: flex;
+  flex-direction: row;
+}
+.black-line {
+  background-color: rgb(90, 90, 90);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+.popularity-rating-red {
+  color: red;
+  font-size: 28px;
+  margin-right: 15px;
+  border: 2px groove red;
+  padding: 4px;
+  border-radius: 50%;
+}
+.popularity-rating-orange {
+  color: orange;
+  font-size: 28px;
+  margin-right: 10px;
+  border: 2px groove orange;
+  padding: 4px;
+  border-radius: 50%;
+}
+.popularity-rating-green {
+  color: rgb(161, 195, 73);
+  font-size: 28px;
+  margin-right: 10px;
+  border: 2px groove rgb(161, 195, 73);
+  padding: 4px;
+  border-radius: 50%;
+}
+.card-poster {
+  height: 1200px;
+  width: auto;
+}
+.poster {
+  margin: 15px;
+  height: 600px;
+  width: auto;
+  border: 2px solid rgb(247, 241, 241);
+  border-radius: 10%;
+}
+.actor-container {
+  border-radius: 8%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(30, 30, 30);
+  box-shadow: 7px 7px rgba(87, 87, 87, 0.507);
+}
+.actor-title {
+  background: inherit;
+  border-radius: 10%;
+  border: 2px solid #a1c349;
+  font-family: "Livvic", sans-serif;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #a1c349;
+}
+.actor-title:hover {
+  background: rgb(50, 50, 50);
+  box-shadow: #a6bb70cb;
+}
+.actor-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}

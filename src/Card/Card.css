@@ -1,15 +1,73 @@
-.contain {
-  display: flex;
-  justify-content: space-between;
+.container {
+  height: 300;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  box-shadow: 7px 7px rgba(87, 87, 87, 0.507);
 }
 .card {
-  width: 600px;
-  height: 500px;
-  position: relative;
-  left: 20%;
-  top: 10%;
+  min-width: 0;
+  font-family: "Livvic", sans-serif;
   box-sizing: border-box;
-  padding: 30px;
-  margin: 30px;
-  background-color: #49111c;
+  padding: 0;
+  display: flex;
+}
+.card-image {
+  height: 300px;
+  width: auto;
+  margin: 4px;
+  padding: 4px;
+}
+.card-text {
+  display: -webkit-box;
+  color: white;
+  line-height: 1.2;
+  max-height: 96px;
+  margin-bottom: 10px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.card-title {
+  text-align: center;
+  color: #a1c349;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.genre-container {
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.genre {
+  color: lightslategray;
+  display: inline;
+  text-align: center;
+}
+.genre::after {
+  content: "| ";
+  padding-left: 5px;
+}
+.genre:last-child::after {
+  content: " ";
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.read-more-button {
+  background: inherit;
+  padding: 3px;
+  border: 2px ridge #64792fb7;
+  border-radius: 15%;
+  color: #a1c349;
+}
+
+.read-more-button:hover {
+  background-color: #a0c3494b;
 }

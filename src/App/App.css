@@ -1,22 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic|Montserrat&display=swap");
+body {
+  min-width: 1050px;
+}
 .app {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #a9927d;
+  background-color: rgb(10, 10, 10);
+  background: url(../Images/black.png) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+
+  margin: 0;
+  padding: 0;
 }
 
 .app-content {
   flex: 1 1 auto;
-  display: flex;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .app a {
   text-decoration: none;
-  color: #fff;
   font-size: 25px;
-  margin: auto;
+  margin: 0;
 }
 
 .app a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #a1c349;
 }

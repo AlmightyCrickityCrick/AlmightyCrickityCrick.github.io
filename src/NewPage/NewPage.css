@@ -1,0 +1,27 @@
+.link-container a {
+  text-decoration: none;
+  display: inline;
+  justify-content: space-evenly;
+}
+.link-div-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.next-container,
+.previous-container {
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid #a1c349;
+  border-radius: 12%;
+}
+.previous,
+.next {
+  display: inline;
+  color: #a1c349;
+  text-decoration: none;
+}
+
+.next-container:hover,
+.previous-container:hover {
+  background-color: #a0c3494b;
+}

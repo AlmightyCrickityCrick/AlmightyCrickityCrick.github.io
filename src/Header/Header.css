@@ -1,16 +1,36 @@
-@import url("https://fonts.google.com/specimen/Livvic");
 .header {
-  background-color: #5e503f;
+  background-color: rgb(20, 20, 20);
+  max-height: 150px;
 }
 .header-menu {
-  color: rgb(34, 25, 18);
+  color: #555;
   font-size: 4.5vh;
   position: absolute;
-  top: 5%;
-  left: 75%;
-  font-family: "Livvic";
+  top: 35px;
+  right: 20px;
+  font-family: "Livvic", sans-serif;
+  text-decoration: none;
 }
 .item-list {
+  text-decoration: none;
+  color: #555;
+  padding: 37px;
   margin-right: 40px;
   display: inline;
+}
+.item-list a {
+  text-decoration: none;
+  color: rgb(99, 96, 96);
+}
+#logotype {
+  height: 100px;
+  padding: 5px;
+}
+#logotype:hover {
+  background: rgb(40, 40, 40);
+}
+.item-list:hover {
+  color: #a1c349;
+  text-decoration: none;
+  background: rgb(40, 40, 40);
 }
