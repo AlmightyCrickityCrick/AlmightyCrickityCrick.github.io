@@ -15,9 +15,9 @@ class Search extends React.Component {
       this.state.query &&
         Promise.all([
           fetch(
-            "https://api.themoviedb.org/3/search/movie?" +
+            "https://api.themoviedb.org/3/search/movie?api_key=" +
               API_Key +
-              "language=en-US&query=" +
+              "&language=en-US&query=" +
               this.state.query +
               "&page=1&include_adult=false"
           ).then(response => response.json()),

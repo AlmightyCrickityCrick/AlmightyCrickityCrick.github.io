@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="app">
         <Header
-          logo="https://scontent.fotp1-1.fna.fbcdn.net/v/t1.15752-9/69137705_722081421549140_811317539802972160_n.png?_nc_cat=111&_nc_oc=AQl1V_tkyGPT_bsjB2BpDQtDrlNcfft3j-rihox8H8Vy80HKC3aEMiLEhVdx9mqW-8w&_nc_ht=scontent.fotp1-1.fna&oh=8284ff6750611107014182a7b8f77ef7&oe=5DD8A107"
+          logo="https://scontent.fkiv5-1.fna.fbcdn.net/v/t1.15752-9/69137705_722081421549140_811317539802972160_n.png?_nc_cat=111&_nc_ohc=swp7ZrmjYo4AQmTGHQv40DwHao7p5PUoNTuZM2AqDjUAJZhULOi0ySwkg&_nc_ht=scontent.fkiv5-1.fna&oh=c3859066102c52f490cb9f86dccaf948&oe=5E76D507"
           menu={[
             { link: "/popular/1", title: "Popular" },
             { link: "/new/1", title: "New" },
