@@ -71,7 +71,8 @@
   justify-content: center;
 }
 .min,
-.max {
+.max,
+.moreInfo {
   width: 80px;
   height: 42px;
   padding: 5px;
@@ -84,9 +85,41 @@
   border-radius: 12%;
 }
 .min:hover,
-.max:hover {
+.max:hover,
+.moreInfo:hover {
   background-color: rgb(90, 90, 90);
 }
+.infoContainer {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.Info {
+  width: 400px;
+  text-align: center;
+  background-color: rgb(50, 50, 50);
+  font-size: 30px;
+  border: 2px solid #a1c349;
+  padding: 20px;
+}
+.infoTitle {
+  height: 40px;
+  text-align: center;
+  margin: 20px;
+}
+.infoContent {
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+td,
+th {
+  border: 1px solid #a1c349;
+  padding: 7px;
+  white-space: nowrap;
+}
+
 .popularity-place {
   display: flex;
   align-items: center;

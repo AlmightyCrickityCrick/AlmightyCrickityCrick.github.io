@@ -7,10 +7,21 @@ import Trailer from "../Trailer/Trailer";
 
 class Movie extends React.Component {
   state = {
-    movie: { title: "", desciption: "", src: "", genres: [], popularity: 2 },
+    movie: {
+      title: "",
+      desciption: "",
+      src: "",
+      genres: [],
+      popularity: 1,
+      budget: 1,
+      revenue: 1,
+      runtime: 1,
+      status: "",
+    },
     trailer: {},
     cast: [],
-    showComponent: false,
+    showActor: false,
+    showInfo: false,
     size: { description: 32, title: 48 },
     className: "",
   };
@@ -42,6 +53,10 @@ class Movie extends React.Component {
                 "https://image.tmdb.org/t/p/w500" + movie.poster_path,
               genres: movie.genres,
               popularity: movie.vote_average,
+              budget: movie.budget,
+              revenue: movie.revenue,
+              runtime: movie.runtime,
+              status: movie.status,
             },
           });
         });
@@ -83,8 +98,11 @@ class Movie extends React.Component {
       );
   }
 
-  handleClick() {
-    this.setState({ showComponent: !this.state.showComponent });
+  handleActor() {
+    this.setState({ showActor: !this.state.showActor });
+  }
+  handleInfo() {
+    this.setState({ showInfo: !this.state.showInfo });
   }
   Maximize() {
     this.state.size.title < 70 &&
@@ -124,10 +142,29 @@ class Movie extends React.Component {
             <h1 className="title" style={{ fontSize: this.state.size.title }}>
               {this.state.movie.title}
             </h1>
-            <div
+            <p
               className="movie-description"
               style={{ fontSize: this.state.size.description }}>
               {this.state.movie.description}
+            </p>
+            <div className="infoContainer">
+              {this.state.showInfo && (
+                <div className="addInfo">
+                  <table className="Info">
+                    <caption>Additional Information</caption>
+                    <tr className="infoTitle">
+                      <th> Budget</th> <th>Revenue</th> <th>Runtime</th>{" "}
+                      <th>Status</th>
+                    </tr>
+                    <tr className="infoContent">
+                      <td>{this.state.movie.budget + "$"}</td>
+                      <td>{this.state.movie.revenue + "$"}</td>
+                      <td>{this.state.movie.runtime + " min"}</td>
+                      <td>{this.state.movie.status}</td>
+                    </tr>
+                  </table>
+                </div>
+              )}
             </div>
             <div className="button-holder">
               <button className="min" onClick={this.Minimize.bind(this)}>
@@ -135,6 +172,9 @@ class Movie extends React.Component {
               </button>
               <button className="max" onClick={this.Maximize.bind(this)}>
                 A
+              </button>
+              <button className="moreInfo" onClick={this.handleInfo.bind(this)}>
+                More
               </button>
             </div>
           </div>
@@ -161,10 +201,10 @@ class Movie extends React.Component {
           </div>
         </div>
         <div className="actor-container">
-          <button className="actor-title" onClick={this.handleClick.bind(this)}>
+          <button className="actor-title" onClick={this.handleActor.bind(this)}>
             Main Cast
           </button>
-          {this.state.showComponent && (
+          {this.state.showActor && (
             <div className="actor-section">
               {this.state.cast.map(actor => {
                 return (
